@@ -1,0 +1,113 @@
+.controlePrevisao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    
+    width: 70%;
+    min-width: 320px;
+    height: 350px;
+    background: linear-gradient(to top,rgb(0, 225, 255), rgb(191, 232, 245),white,white);
+    border-radius: 15px;
+    margin: 5px;
+    transition: all .5s;
+}
+.controlePrevisao h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+
+    color: rgb(199, 129, 0);
+    box-shadow: 0px 7px 9px -13px black;
+    
+}
+
+.listaPrevisao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
+}
+.previsao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.previsao p{
+    color: rgb(0, 161, 161);
+    font-size: 1.5rem;   
+    transition: all 1s; 
+}
+.previsao h2{
+    color: rgb(0, 161, 161);
+    font-size: 1.9rem; 
+    transition: all 1s;   
+}
+.previsao #idDesc{
+    text-transform: capitalize;
+}
+.controleTemp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
+}
+.controleTemp p{
+    font-size: 1.1rem;
+    color: white;
+}
+@media screen and (max-width: 1750px) {
+    .previsao{
+        padding: 0px;
+    }
+    .previsao p{
+        font-size: 1.1rem;    
+    }
+    .previsao h2{
+        font-size: 1.4rem;    
+    }
+    
+}
+@media screen and (max-width: 1600px) {
+
+    .previsao p{
+        font-size: .9rem;    
+    }
+    .previsao h2{
+        font-size: 1rem;    
+    }
+    
+}
+@media screen and (max-width: 1210px) {
+    .controlePrevisao{
+        height: 100%;
+        
+    }
+    .listaPrevisao{
+        flex-direction: column;
+    }
+    .previsao{
+        border-bottom: 1px solid black;
+        padding: 10px;
+        
+    }
+    .previsao h2{
+        font-size: 1.9rem; 
+    }
+    .previsao p{
+        font-size: 1.4rem;
+        
+    }
+    .controleTemp p{
+        color: rgb(0, 161, 161);
+        
+    }
+    
+    
+}

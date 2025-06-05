@@ -1,0 +1,77 @@
+
+.controleInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    
+    width: 70%;
+    min-width: 320px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    margin: 5px;
+    box-shadow: 0px 0px 14px -9px rgba(0, 0, 0, 0.432);
+    transition: all .5s;
+}
+.controleInfo .nome{
+    color: rgb(199, 129, 0);
+    box-shadow: 0px 7px 9px -13px black;
+}
+.controleTempo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    left: 2.3%;
+    transition: all .5s;
+
+}
+.controleTempo h2{
+    font-size: 2.5rem;
+    margin-top: 10px;
+
+}
+.controleTempo img{
+    width: 4.2rem;
+}
+.controleInfo p{
+    color: rgb(0, 161, 161);
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 5%;
+    transition: all .5s;
+    
+}
+.infos p{
+    color: rgba(1, 88, 88, 0.301);
+    text-align: center;
+    font-variant: initial;
+    font-size: 1.3rem;
+    padding: 0px 10px;
+    position: relative;
+    right: 2%;
+}
+
+@media screen and (max-width: 1200px) {
+    .infos{
+        flex-direction: column;
+    }
+    .infos p{
+        right: 0;
+    }
+    .controleInfo{
+        height: 50%;
+    }
+    
+}
