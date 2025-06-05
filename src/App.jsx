@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react'
 import axios from 'axios'
 import './App.css'
-import InfoTempo from './components/infoTempo/infoTempo'
-import Previsao from './components/Previsao/Previsao'
+import InfoTempo from './components/InfoTempo'
+import Previsao from './components/Previsao'
+
 
 
 function App() {
